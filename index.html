@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+</head>
+<title> FAMILY BOOK</title>
+<body>
+    <h1 family book></h1>
+    <hr> <hr>
+    <img id="family_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpFALkMF-QqJT9mbLBmHxBCRGRDjrZ2CDXTg&usqp=CAU">
+    <h3 id="one"> 1.Our family Book</h3>
+    <button type="button" onclick="family()">Next</button>
+<hr>
+    <script>
+        var names=[
+            "2. My father (Sandeep Tripathy)",
+            "3. My mother (Kadambini Tripathy)",
+            "4. me(Priyanshu Tripathy)",
+        ];
+
+        
+        var images=[
+            "2.https://lh3.googleusercontent.com/g_MT9u3O1u6QqHuBDtCCfoK8QWNRGb9djkE0C6kc4MC1DJ0M_pGYXQ1pNNL9XDpIGpIRKw=s85",
+            "3.https://lh3.googleusercontent.com/xirdwcRQBQjeTP-eGZFRd54CASA0yU3eY-_BzgEorbbUA2qYhNultGeTqiFlo4jpRGov8g=s85",
+            "4.https://lh3.googleusercontent.com/24FHLvHLYJ6dp3QR0XkdG2326U6AQIjX-bQoLvuBtN6Sv50ODxYgtxsRidGjllUFdJlJyQ=s85",
+        ];
+
+        var i=0;
+        function family(){
+           document.getElementById("one").innerHTML=names[i];
+           document.getElementById("family_img").src=images[i];
+           i++;
+           if(i==4){
+               i=0;
+           }}
+    </script>
+
+</body>
+   
+
+</html>
